@@ -1,4 +1,4 @@
-Configuration of DeepText-NeuralClassifier uses JSON.
+Configuration of NeuralClassifier uses JSON.
 
 ## Common
 
@@ -55,8 +55,7 @@ Configuration of DeepText-NeuralClassifier uses JSON.
 * **decay\_rate**
 * **clip\_gradients**
 * **l2\_lambda**
-* **classification\_type**
-* **loss\_type**: Candidates: "SoftmaxCrossEntropy", "SoftmaxFocalCrossEntropy", "BCEWithLogitsLoss".
+* **loss\_type**: Candidates: "SoftmaxCrossEntropy", "SoftmaxFocalCrossEntropy", "SigmodFocalCrossEntropy", "BCEWithLogitsLoss".
 * **sampler**
 * **num\_sampled**
 * **hidden\_layer\_dropout**
@@ -65,15 +64,15 @@ Configuration of DeepText-NeuralClassifier uses JSON.
 
 ## Embedding
 
-* **type**
+* **type**: Candidates: "embedding", "region_embedding"
 * **dimension**
-* **region\_embedding\_type**
+* **region\_embedding\_type**: Candidates: "word\_context", "context\_word"
 * **region_size**
-* **initializer**
-* **fan\_mode**
+* **initializer**: Candidates: "uniform", "normal", "xavier\_uniform", "xavier\_normal", "kaiming\_uniform", "kaiming\_normal", "orthogonal"
+* **fan\_mode**: Candidates: "FAN\_IN", "FAN\_OUT"
 * **uniform\_bound**
 * **random\_stddev**
-* **dropout**
+* **dropout**: dropout of embedding layer
 
 
 ## Optimizer
@@ -88,9 +87,9 @@ Configuration of DeepText-NeuralClassifier uses JSON.
 
 * **text\_file**
 * **threshold**: float trunc threshold for predict probabilities.
-* **dir**
-* **batch\_size**
-* **is\_flat**: is flat classification task.
+* **dir**: output dir of evaluation.
+* **batch\_size**: batch size of evaluation.
+* **is\_flat**: Boolean, flat evaluation or hierarchical evaluation.
 
 
 ## Log
@@ -114,7 +113,7 @@ Configuration of DeepText-NeuralClassifier uses JSON.
 * **num\_layers**
 * **doc\_embedding\_type**: Candidates: "AVG", "Attention", "LastHidden".
 * **attention\_dimension**
-* **bidirectional**: Boolean.
+* **bidirectional**: Boolean, use Bi-RNNs.
 
 ### RCNN
 
@@ -124,7 +123,7 @@ see TextCNN and TextRNN
 
 * **hidden\_dimension**
 * **window\_size**
-* **rnn\_type**
+* **rnn\_type**: Candidates: "RNN", "LSTM", "GRU".
 * **bidirectional**
 * **cell\_hidden\_dropout**
 
@@ -142,9 +141,10 @@ see TextCNN and TextRNN
 
 ### AttentiveConvNet
 
-* **attentive\_width**
-* **attentive\_hidden_\size**
-* **attentive\_version**:  Candidates: "light", "advanced".
+* **attention\_type**: Candidates: "dot", "bilinear", "additive_projection".
+* **margin\_size**
+* **type**:  Candidates: "light", "advanced".
+* **hidden\_size**
 
 ### Transformer
 
