@@ -134,6 +134,21 @@
     "num_layers": 1,
     "bidirectional": true
   },
+  "Transformer": {
+    "d_inner": 128,
+    "d_k": 32,
+    "d_v": 32,
+    "n_head": 4,
+    "n_layers": 1,
+    "dropout": 0.1,
+    "use_star": false
+  },
+  "AttentiveConvNet": {
+    "attention_type": "bilinear",
+    "margin_size": 3,
+    "type": "advanced",
+    "hidden_size": 64
+  },
   "log": {
     "logger_file": "test/log_test_rcv1_hierar",
     "log_level": "warn"
