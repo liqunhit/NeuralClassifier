@@ -1,4 +1,4 @@
-![NeuralClassifier Logo](readme/deeptext_logo.png)
+![NeuralClassifier Logo](readme/logo.png)
 
 
 # NeuralClassifier: An Open-source Neural Hierarchical Multi-label Text Classification Toolkit
