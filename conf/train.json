@@ -1,4 +1,10 @@
 {
+  "task_info":{
+    "label_type": "multi_label",
+    "hierarchical": false,
+    "hierar_taxonomy": "data/rcv1.taxonomy",
+    "hierar_penalty": 0.000001
+  },
   "device": "cuda",
   "model_name": "TextRNN",
   "checkpoint_dir": "test/checkpoint_dir_rcv1",
@@ -39,12 +45,6 @@
     "max_char_len_per_token": 4,
     "token_pretrained_file": "",
     "keyword_pretrained_file": ""
-  },
-  "task_info":{
-    "label_type": "multi_label",
-    "hierarchical": false,
-    "hierar_taxonomy": "data/rcv1.taxonomy",
-    "hierar_penalty": 0.000001
   },
   "train": {
     "batch_size": 256,
