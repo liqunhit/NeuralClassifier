@@ -54,9 +54,8 @@ in our toolkit achieve comparable performance with reported results in the liter
 ### Evaluation
     python eval.py conf/train.json
 
-if is\_flat = false, hierarchical evaluation will be output.
-
-eval.model\_dir is the model to evaluate.
+* if is\_flat = false, hierarchical evaluation will be outputed.
+* eval.model\_dir is the model to evaluate.
 
 ## Input Data Format
 
