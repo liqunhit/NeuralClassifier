@@ -1,7 +1,6 @@
 #!usr/bin/env python
 # coding:utf8
 
-# Copyright (c) 2018, Tencent. All rights reserved
 
 import json
 
