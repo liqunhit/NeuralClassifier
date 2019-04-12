@@ -1,4 +1,4 @@
-Configuration of DeepText-NeuralClassifier uses JSON.
+Configuration of NeuralClassifier uses JSON.
 
 ## Common
 
@@ -142,9 +142,10 @@ see TextCNN and TextRNN
 
 ### AttentiveConvNet
 
-* **attentive\_width**
-* **attentive\_hidden_\size**
-* **attentive\_version**:  Candidates: "light", "advanced".
+* **attention\_type**
+* **margin\_size**
+* **type**:  Candidates: "light", "advanced".
+* **hidden_\size**
 
 ### Transformer
 
