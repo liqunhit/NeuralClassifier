@@ -15,15 +15,12 @@ class LossType(Type):
     SOFTMAX_FOCAL_CROSS_ENTROPY = "SoftmaxFocalCrossEntropy"
     SIGMOID_FOCAL_CROSS_ENTROPY = "SigmoidFocalCrossEntropy"
     BCE_WITH_LOGITS = "BCEWithLogitsLoss"
-    NEGATIVE_LOG_LIKELIHOOD = "NegativeLogLikelihood"
 
     def str(self):
         return ",".join([self.SOFTMAX_CROSS_ENTROPY,
                          self.SOFTMAX_FOCAL_CROSS_ENTROPY,
                          self.SIGMOID_FOCAL_CROSS_ENTROPY,
-                         self.BCE_WITH_LOGITS,
-                         self.NEGATIVE_LOG_LIKELIHOOD,
-                         self.CRF_NLLLOSS])
+                         self.BCE_WITH_LOGITS])
 
 class ActivationType(Type):
     """Standard names for activation type

@@ -72,7 +72,6 @@ class TextVDCNN(Classifier):
 
     def update_lr(self, optimizer, epoch):
         """Update lr
-        TODO(marvinmu): not sure if this is the best way.
         """
         if epoch > self.config.train.num_epochs_static_embedding:
             for param_group in optimizer.param_groups[:2]:
