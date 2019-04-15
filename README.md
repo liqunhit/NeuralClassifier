@@ -14,10 +14,10 @@ in our toolkit achieve comparable performance with reported results in the liter
 
 ## Support tasks
 
-* Binary-Class text classifcation
-* Multi-Class text classification
+* Binary-class text classifcation
+* Multi-class text classification
 * Multi-label text classification
-* Hiearchical (multi-label) text classifcation
+* Hiearchical (multi-label) text classifcation (HMC)
 
 ## Support text encoders
 
@@ -51,11 +51,16 @@ in our toolkit achieve comparable performance with reported results in the liter
 
 ***Detail configurations and explanations see [Configuration](readme/Configuration.md).***
 
+The training info will be outputted in standard output and log.logger\_file.
+
 ### Evaluation
     python eval.py conf/train.json
 
 * if is\_flat = false, hierarchical evaluation will be outputed.
 * eval.model\_dir is the model to evaluate.
+* conf.data.test\_json\_files is the input text file to evaluate.
+
+The evaluation info will be outputed in eval.dir.
 
 ## Input Data Format
 
@@ -72,7 +77,7 @@ in our toolkit achieve comparable performance with reported results in the liter
 
 ## Performance
 
-### 0. DataSet
+### 0. Dataset
 
 <table>
 <tr><th>Dataset<th>Taxonomy<th>#label<th>#Training<th>#Test

@@ -4,11 +4,11 @@ Configuration of NeuralClassifier uses JSON.
 
 * **task\_info**
     * **label_type**:  Candidates: "single-label", "multi-label".
-    * **hierarchical**: Boolean.
-    * **hierar_taxonomy**: 
-    * **hierar_penalty**:
+    * **hierarchical**: Boolean. Indicates whether it is a hierarchical classification.
+    * **hierar_taxonomy**: A text file describes taxonomy. 
+    * **hierar_penalty**: Float.
 * **device**: Candidates: "cuda", "cpu".
-* **model\_name**: Candidates: "FastText", "TextCNN", "TextRNN", "TextRCNN", "DRNN", "VDCNN", "DPCNN", "Region embedding", "AttentiveConvNet", "Transformer".
+* **model\_name**: Candidates: "FastText", "TextCNN", "TextRNN", "TextRCNN", "DRNN", "VDCNN", "DPCNN", "AttentiveConvNet", "Transformer".
 * **checkpoint\_dir**: checkpoint directory
 * **model\_dir**: model directory
 * **data**
@@ -46,7 +46,6 @@ Configuration of NeuralClassifier uses JSON.
 ## Train
 
 * **batch\_size**
-* **predict\_batch\_size**
 * **eval\_train\_data**: whether evaluate training data when training.
 * **start\_epoch**
 * **num\_epochs**
@@ -66,13 +65,13 @@ Configuration of NeuralClassifier uses JSON.
 
 * **type**: Candidates: "embedding", "region_embedding"
 * **dimension**
-* **region\_embedding\_type**: Candidates: "word\_context", "context\_word"
-* **region_size**
+* **region\_embedding\_type**: config for Region embedding. Candidates: "word\_context", "context\_word"
+* **region_size** Config for Region embedding.
 * **initializer**: Candidates: "uniform", "normal", "xavier\_uniform", "xavier\_normal", "kaiming\_uniform", "kaiming\_normal", "orthogonal"
 * **fan\_mode**: Candidates: "FAN\_IN", "FAN\_OUT"
 * **uniform\_bound**
 * **random\_stddev**
-* **dropout**: dropout of embedding layer
+* **dropout**: dropout of embedding layer.
 
 
 ## Optimizer
