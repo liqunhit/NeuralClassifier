@@ -147,6 +147,11 @@ In the implementation process of our toolkit, we refer to some public codes:
 * https://github.com/Cheneng/DPCNN
 * https://github.com/ailias/Focal-Loss-implement-on-Tensorflow/
 * https://github.com/HKUST-KnowComp/DeepGraphCNNforTexts/tree/master/Pytorch_GraphCNNs
+* https://github.com/yinwenpeng/Attentive_Convolution
+* https://github.com/text-representation/local-context-unit
+* https://github.com/brightmart/text_classification
+* https://github.com/zonetrooper32/VDCNN
+* https://github.com/NLPLearn/QANet
 
 ## Update
 
