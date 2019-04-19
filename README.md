@@ -80,7 +80,7 @@ The evaluation info will be outputed in eval.dir.
 ### 0. Dataset
 
 <table>
-<tr><th>Dataset<th>Taxonomy<th>#label<th>#Training<th>#Test
+<tr><th>Dataset<th>Taxonomy<th>#Label<th>#Training<th>#Test
 <tr><td>RCV1<td>Tree<td>103<td>23,149<td>781,265
 <tr><td>Yelp<td>DAG<td>539<td>87,375<td>37,265
 </table>
@@ -91,8 +91,8 @@ The evaluation info will be outputed in eval.dir.
 ### 1. Compare with state-of-the-art
 <table>
 <tr><th>Text Encoders<th>Micro-F1 on RCV1<th>Micro-F1 on Yelp
-<tr><td>Peng et al., 2018<td>0.7610<td>-
-<tr><td>Wehrmann et al., 2018<td>0.8080<td>0.6640
+<tr><td>HR-DGCNN (Peng et al., 2018)<td>0.7610<td>-
+<tr><td>HMCN (Wehrmann et al., 2018)<td>0.8080<td>0.6640
 <tr><td>Ours<td><strong>0.8099</strong><td><strong>0.6704</strong>
 </table>
 
