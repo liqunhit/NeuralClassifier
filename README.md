@@ -152,6 +152,7 @@ In the implementation process of our toolkit, we refer to some public codes:
 * https://github.com/brightmart/text_classification
 * https://github.com/zonetrooper32/VDCNN
 * https://github.com/NLPLearn/QANet
+* https://github.com/huggingface/pytorch-pretrained-BERT
 
 ## Update
 
