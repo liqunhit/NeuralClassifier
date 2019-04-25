@@ -17,7 +17,7 @@ in our toolkit achieve comparable performance with reported results in the liter
 * Binary-class text classifcation
 * Multi-class text classification
 * Multi-label text classification
-* Hiearchical (multi-label) text classifcation (HMC)
+* Hiearchical (multi-label) text classification (HMC)
 
 ## Support text encoders
 
@@ -56,9 +56,9 @@ The training info will be outputted in standard output and log.logger\_file.
 ### Evaluation
     python eval.py conf/train.json
 
-* if is\_flat = false, hierarchical evaluation will be outputed.
+* if eval.is\_flat = false, hierarchical evaluation will be outputted.
 * eval.model\_dir is the model to evaluate.
-* conf.data.test\_json\_files is the input text file to evaluate.
+* data.test\_json\_files is the input text file to evaluate.
 
 The evaluation info will be outputed in eval.dir.
 
@@ -138,7 +138,7 @@ The evaluation info will be outputed in eval.dir.
 
 ## Acknowledgement
 
-In the implementation process of our toolkit, we refer to some public codes:
+Some public codes are referenced by our tookkit:
 
 * https://pytorch.org/docs/stable/
 * https://github.com/jadore801120/attention-is-all-you-need-pytorch/
