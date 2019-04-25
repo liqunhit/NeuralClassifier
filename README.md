@@ -138,7 +138,7 @@ The evaluation info will be outputed in eval.dir.
 
 ## Acknowledgement
 
-Some public codes are referenced by our tookkit:
+Some public codes are referenced by our toolkit:
 
 * https://pytorch.org/docs/stable/
 * https://github.com/jadore801120/attention-is-all-you-need-pytorch/
