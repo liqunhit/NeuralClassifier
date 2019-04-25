@@ -56,6 +56,7 @@ class FocalLoss(nn.Module):
             shape of [batch_size]
         """
         if self.activation_type == ActivationType.SOFTMAX:
+            idx = target.view(-1, 1).long()
             one_hot_key = torch.zeros(idx.size(0), self.num_cls, dtype=torch.float,
                                   device=idx.device)
             one_hot_key = one_hot_key.scatter_(1, idx, 1)
