@@ -95,7 +95,7 @@ class Embedding(torch.nn.Module):
                 data = line.strip().split(' ')
                 # Check embedding info
                 if len(data) == 2:
-                    assert data[1] == embedding_dim, \
+                    assert int(data[1]) == embedding_dim, \
                         "Pretrained embedding dim not matching: %s, %d" % (
                             data[1], embedding_dim)
                     continue
