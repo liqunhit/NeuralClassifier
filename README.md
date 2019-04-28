@@ -37,6 +37,7 @@ in our toolkit achieve comparable performance with reported results in the liter
 
 * Python 3
 * PyTorch 0.4+
+* Numpy 1.14.3+
 
 ## System Architecture
 
