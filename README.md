@@ -105,17 +105,17 @@ The evaluation info will be outputed in eval.dir.
 <table>
 <tr><th row_span='2'>Text Encoders<th colspan='2'>RCV1<th colspan='2'>Yelp
 <tr><td><th>Micro-F1<th>Macro-F1<th>Micro-F1<th>Macro-F1
-<tr><td>TextCNN<td>0.7608<td>0.4649<td>0.6179<td>0.3851
+<tr><td>TextCNN<td>0.7608<td>0.4649<td>0.6281<td>0.3657
 <tr><td>TextRNN<td>0.7883<td>0.4972<td><strong>0.6704</strong><td>0.4059
 <tr><td>RCNN<td><strong>0.8099</strong><td><strong>0.5332</strong><td>0.6569<td>0.3951
-<tr><td>FastText<td>0.6887<td>0.2701 <td>0.5386<td>0.1817
-<tr><td>DRNN<td>0.7601 <td>0.4523<td>0.6174<td>0.3835
+<tr><td>FastText<td>0.6887<td>0.2701 <td>0.6031<td>0.2323
+<tr><td>DRNN<td>0.7601 <td>0.4523<td>0.6579<td>0.4401
 <tr><td>DPCNN<td>0.7439 <td>0.4141 <td>0.5671 <td>0.2393
-<tr><td>VDCNN<td>0.7263 <td>0.3860<td>0.6079<td>0.3427
+<tr><td>VDCNN<td>0.7263 <td>0.3860<td>0.6395<td>0.4035
 <tr><td>AttentiveConvNet<td>0.7533<td>0.4373<td>0.6367<td>0.4040
 <tr><td>RegionEmbedding<td>0.7780 <td>0.4888 <td>0.6601<td><strong>0.4514</strong>
 <tr><td>Transformer<td>0.7603 <td>0.4274<td>0.6533<td>0.4121
-<tr><td>Star-Transformer<td>0.7668 <td>0.4840<td>0.6293<td>0.3977
+<tr><td>Star-Transformer<td>0.7668 <td>0.4840<td>0.6482<td>0.3895
 
 </table>
 
