@@ -40,10 +40,8 @@ def get_classification_model(model_name, dataset, conf):
 def load_checkpoint(file_name, conf, model, optimizer):
     checkpoint = torch.load(file_name)
     conf.train.start_epoch = checkpoint["epoch"]
-    best_performance = checkpoint["best_performance"]
     model.load_state_dict(checkpoint["state_dict"])
     optimizer.load_state_dict(checkpoint["optimizer"])
-    return best_performance
 
 
 def eval(conf):
@@ -62,7 +60,7 @@ def eval(conf):
 
     empty_dataset = globals()[dataset_name](conf, [])
     model = get_classification_model(model_name, empty_dataset, conf)
-    optimizer = get_optimizer(conf, model.parameters())
+    optimizer = get_optimizer(conf, model)
     load_checkpoint(conf.eval.model_dir, conf, model, optimizer)
     model.eval()
     is_multi = False
@@ -70,7 +68,6 @@ def eval(conf):
         is_multi = True
     predict_probs = []
     standard_labels = []
-    total_loss = 0.
     evaluator = cEvaluator(conf.eval.dir)
     for batch in test_data_loader:
         logits = model(batch)
@@ -80,7 +77,6 @@ def eval(conf):
             result = torch.sigmoid(logits).cpu().tolist()
         predict_probs.extend(result)
         standard_labels.extend(batch[ClassificationDataset.DOC_LABEL_LIST])
-    total_loss = total_loss / len(predict_probs)
     (_, precision_list, recall_list, fscore_list, right_list,
      predict_list, standard_list) = \
         evaluator.evaluate(
