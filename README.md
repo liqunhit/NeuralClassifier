@@ -94,7 +94,7 @@ The evaluation info will be outputed in eval.dir.
 <tr><th>Text Encoders<th>Micro-F1 on RCV1<th>Micro-F1 on Yelp
 <tr><td>HR-DGCNN (Peng et al., 2018)<td>0.7610<td>-
 <tr><td>HMCN (Wehrmann et al., 2018)<td>0.8080<td>0.6640
-<tr><td>Ours<td><strong>0.8099</strong><td><strong>0.6704</strong>
+<tr><td>Ours<td><strong>0.8172</strong><td><strong>0.6704</strong>
 </table>
 
 * HR-DGCNN: [Peng et al., 2018](http://www.cse.ust.hk/~yqsong/papers/2018-WWW-Text-GraphCNN.pdf)
@@ -107,7 +107,7 @@ The evaluation info will be outputed in eval.dir.
 <tr><td><th>Micro-F1<th>Macro-F1<th>Micro-F1<th>Macro-F1
 <tr><td>TextCNN<td>0.7608<td>0.4649<td>0.6281<td>0.3657
 <tr><td>TextRNN<td>0.7883<td>0.4972<td><strong>0.6704</strong><td>0.4059
-<tr><td>RCNN<td><strong>0.8119</strong><td><strong>0.5661</strong><td>0.6569<td>0.3951
+<tr><td>RCNN<td><strong>0.8172</strong><td><strong>0.5563</strong><td>0.6569<td>0.3951
 <tr><td>FastText<td>0.6887<td>0.2701 <td>0.6031<td>0.2323
 <tr><td>DRNN<td>0.7601 <td>0.4523<td>0.6579<td>0.4401
 <tr><td>DPCNN<td>0.7439 <td>0.4141 <td>0.5671 <td>0.2393
@@ -126,7 +126,7 @@ The evaluation info will be outputed in eval.dir.
 <tr><td><th>Micro-F1<th>Macro-F1<th>Micro-F1<th>Macro-F1
 <tr><td>TextCNN<td>0.7608<td>0.4649<td>0.7367<td>0.4224
 <tr><td>TextRNN<td>0.7883<td>0.4972<td>0.7546 <td>0.4505
-<tr><td>RCNN<td><strong>0.8119</strong><td><strong>0.5661</strong><td><strong>0.7955</strong><td><strong>0.5123</strong>
+<tr><td>RCNN<td><strong>0.8172</strong><td><strong>0.5563</strong><td><strong>0.7955</strong><td><strong>0.5123</strong>
 <tr><td>FastText<td>0.6887<td>0.2701 <td>0.6865<td>0.2816
 <tr><td>DRNN<td>0.7601 <td>0.4523<td>0.7506<td>0.4450
 <tr><td>DPCNN<td>0.7439 <td>0.4141 <td>0.7423  <td>0.4261
