@@ -177,7 +177,7 @@ def train(conf):
     model = get_classification_model(model_name, empty_dataset, conf)
     loss_fn = globals()["ClassificationLoss"](
         label_size=len(empty_dataset.label_map), loss_type=conf.train.loss_type)
-    optimizer = get_optimizer(conf, model.parameters())
+    optimizer = get_optimizer(conf, model)
     evaluator = cEvaluator(conf.eval.dir)
     trainer = globals()["ClassificationTrainer"](
         empty_dataset.label_map, logger, evaluator, conf, loss_fn)
@@ -196,7 +196,6 @@ def train(conf):
         if performance > best_performance:
             best_epoch = epoch
             best_performance = performance
-
         save_checkpoint({
             'epoch': epoch,
             'model_name': model_name,
@@ -219,4 +218,6 @@ def train(conf):
 if __name__ == '__main__':
     config = Config(config_file=sys.argv[1])
     os.environ['CUDA_VISIBLE_DEVICES'] = str(config.train.visible_device_list)
+    torch.manual_seed(2019)
+    torch.cuda.manual_seed(2019)
     train(config)

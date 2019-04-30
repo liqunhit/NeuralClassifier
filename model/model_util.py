@@ -109,7 +109,7 @@ class OptimizerType(Type):
 
 
 def get_optimizer(config, params):
-    #params = params.get_parameter_optimizer_dict()
+    params = params.get_parameter_optimizer_dict()
     if config.optimizer.optimizer_type == OptimizerType.ADAM:
         return torch.optim.Adam(lr=config.optimizer.learning_rate,
                                 params=params)
