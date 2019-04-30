@@ -94,7 +94,7 @@ The evaluation info will be outputed in eval.dir.
 <tr><th>Text Encoders<th>Micro-F1 on RCV1<th>Micro-F1 on Yelp
 <tr><td>HR-DGCNN (Peng et al., 2018)<td>0.7610<td>-
 <tr><td>HMCN (Wehrmann et al., 2018)<td>0.8080<td>0.6640
-<tr><td>Ours<td><strong>0.8099</strong><td><strong>0.6704</strong>
+<tr><td>Ours<td><strong>0.8172</strong><td><strong>0.6704</strong>
 </table>
 
 * HR-DGCNN: [Peng et al., 2018](http://www.cse.ust.hk/~yqsong/papers/2018-WWW-Text-GraphCNN.pdf)
