@@ -126,7 +126,7 @@ The evaluation info will be outputed in eval.dir.
 <tr><td><th>Micro-F1<th>Macro-F1<th>Micro-F1<th>Macro-F1
 <tr><td>TextCNN<td>0.7608<td>0.4649<td>0.7367<td>0.4224
 <tr><td>TextRNN<td>0.7883<td>0.4972<td>0.7546 <td>0.4505
-<tr><td>RCNN<td><strong>0.8172</strong><td><strong>0.5563</strong><td><strong>0.7955</strong><td><strong>0.5123</strong>
+<tr><td>RCNN<td><strong>0.8202</strong><td><strong>0.5861</strong><td><strong>0.7955</strong><td><strong>0.5123</strong>
 <tr><td>FastText<td>0.6887<td>0.2701 <td>0.6865<td>0.2816
 <tr><td>DRNN<td>0.7601 <td>0.4523<td>0.7506<td>0.4450
 <tr><td>DPCNN<td>0.7439 <td>0.4141 <td>0.7423  <td>0.4261
