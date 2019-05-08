@@ -105,7 +105,7 @@ The evaluation info will be outputed in eval.dir.
 <table>
 <tr><th row_span='2'>Text Encoders<th colspan='2'>RCV1<th colspan='2'>Yelp
 <tr><td><th>Micro-F1<th>Macro-F1<th>Micro-F1<th>Macro-F1
-<tr><td>TextCNN<td>0.7608<td>0.4649<td>0.6281<td>0.3657
+<tr><td>TextCNN<td>0.7717<td>0.5246<td>0.6281<td>0.3657
 <tr><td>TextRNN<td>0.7883<td>0.4972<td><strong>0.6704</strong><td>0.4059
 <tr><td>RCNN<td><strong>0.8313</strong><td><strong>0.6047</strong><td>0.6569<td>0.3951
 <tr><td>FastText<td>0.6887<td>0.2701 <td>0.6031<td>0.2323
@@ -124,7 +124,7 @@ The evaluation info will be outputed in eval.dir.
 <table>
 <tr><th row_span='2'>Text Encoders<th colspan='2'>Hierarchical<th colspan='2'>Flat
 <tr><td><th>Micro-F1<th>Macro-F1<th>Micro-F1<th>Macro-F1
-<tr><td>TextCNN<td>0.7608<td>0.4649<td>0.7367<td>0.4224
+<tr><td>TextCNN<td>0.7717<td>0.5246<td>0.7367<td>0.4224
 <tr><td>TextRNN<td>0.7883<td>0.4972<td>0.7546 <td>0.4505
 <tr><td>RCNN<td><strong>0.8313</strong><td><strong>0.6047</strong><td><strong>0.7955</strong><td><strong>0.5123</strong>
 <tr><td>FastText<td>0.6887<td>0.2701 <td>0.6865<td>0.2816
