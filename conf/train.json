@@ -47,7 +47,7 @@
     "keyword_pretrained_file": ""
   },
   "train": {
-    "batch_size": 512,
+    "batch_size": 64,
     "start_epoch": 1,
     "num_epochs": 5,
     "num_epochs_static_embedding": 0,
@@ -58,7 +58,7 @@
     "loss_type": "BCEWithLogitsLoss",
     "sampler": "fixed",
     "num_sampled": 5,
-    "visible_device_list": "5",
+    "visible_device_list": "0",
     "hidden_layer_dropout": 0.5
   },
   "embedding": {
