@@ -110,7 +110,7 @@ The evaluation info will be outputed in eval.dir.
 <tr><td>RCNN<td><strong>0.8313</strong><td><strong>0.6047</strong><td>0.6569<td>0.3951
 <tr><td>FastText<td>0.6887<td>0.2701 <td>0.6031<td>0.2323
 <tr><td>DRNN<td>0.7601 <td>0.4523<td>0.6579<td>0.4401
-<tr><td>DPCNN<td>0.7439 <td>0.4141 <td>0.5671 <td>0.2393
+<tr><td>DPCNN<td>0.8220 <td>0.5609 <td>0.5671 <td>0.2393
 <tr><td>VDCNN<td>0.7263 <td>0.3860<td>0.6395<td>0.4035
 <tr><td>AttentiveConvNet<td>0.7533<td>0.4373<td>0.6367<td>0.4040
 <tr><td>RegionEmbedding<td>0.7780 <td>0.4888 <td>0.6601<td><strong>0.4514</strong>
@@ -129,7 +129,7 @@ The evaluation info will be outputed in eval.dir.
 <tr><td>RCNN<td><strong>0.8313</strong><td><strong>0.6047</strong><td><strong>0.7955</strong><td><strong>0.5123</strong>
 <tr><td>FastText<td>0.6887<td>0.2701 <td>0.6865<td>0.2816
 <tr><td>DRNN<td>0.7601 <td>0.4523<td>0.7506<td>0.4450
-<tr><td>DPCNN<td>0.7439 <td>0.4141 <td>0.7423  <td>0.4261
+<tr><td>DPCNN<td>0.8220 <td>0.5609 <td>0.7423  <td>0.4261
 <tr><td>VDCNN<td>0.7263 <td>0.3860<td>0.7110<td>0.3593
 <tr><td>AttentiveConvNet<td>0.7533<td>0.4373<td>0.7511<td>0.4286
 <tr><td>RegionEmbedding<td>0.7780 <td>0.4888 <td>0.7640<td>0.4617
